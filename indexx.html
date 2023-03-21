@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Task 7</title>
+    <style type="text/css">
+        
+    </style>
+    <link rel="stylesheet" href="indexx.css">
+
+</head>
+
+<body>
+    <div class="register">
+
+    <form method="" action="" id="register" name="stud_form" onsubmit="return validate()">
+      
+
+        <h2 style="text-align: center;">Ragistration Form</h2>
+        <table>
+            <tr>
+                <td><label>Name :</label></td>
+                <td><input type="text" name="name" id="name" onblur="validateString(this.id)">
+                    <br/> <label id="err_name"></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Age :</label></td>
+                <td><input type="number" name="age"  id="age" onblur="validateAge(this.id)">
+                    <br/> <label id="err_age"></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Email :</label></td>
+                <td><input type="text" name="email" id="email" autocomplete="off" onblur="validateEmail(this.id)">
+                    <br/> <label id="err_email"></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Mobile</label></td>
+                <td><input type="text" name="Mobile" id="Mobile" autocomplete="off" onblur="validateNumber(this.id)" max="10">
+                    <br/> <label id="err_mobile"></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>City :</label></td>
+                <td>
+                    <select name="city" id="city" autocomplete="off" onblur="validatecity(this.id)">
+                         
+                    <option value="city">Select city</option>
+
+                    <option value="lko">Lucknow</option>
+                    <option value="gkp"> Gorakhpur</option>
+                    <option value="ndl">New Delhi</option>
+                    
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label> Hobbies :</label></td>
+                <td><input type="checkbox" name="hobbi" value="footbal"> <span id="footbol">Football</span>&nbsp;
+
+                    <input type="checkbox" name="hobbi" value="chess"> <span id="chess">Chess</span>
+
+                    <input type="checkbox" name="hobbi" value="coding"> <span id="coding">Coding</span>
+                 </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="position: relative;left:-110px;">
+                    <input type="Submit" name="Submit" id="Submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+       
+    </form>
+</div>
+ 
+    <script src="indexx.js"></script>
+
+
+</body>
+
+</html>
